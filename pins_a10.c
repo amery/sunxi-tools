@@ -123,11 +123,47 @@ static const char *port_d[][6] = {
 	{"LCD0_VSYNC", "SMC_SDA"},		/* PD27 */
 };
 
+static const char *port_e[][6] = {
+	{"TS0_CLK",	"CSI0_PCLK"},	/* PE0 */
+	{"TS0_ERR",	"CSI0_MCLK"},	/* PE1 */
+	{"TS0_SYNC",	"CSI0_HSYNC"},	/* PE2 */
+	{"TS0_DVLD",	"CSI0_VSYNC"},	/* PE3 */
+	{"TS0_D0",	"CSI0_D0"},	/* PE4 */
+	{"TS0_D1",	"CSI0_D1"},	/* PE5 */
+	{"TS0_D2",	"CSI0_D2"},	/* PE6 */
+	{"TS0_D3",	"CSI0_D3"},	/* PE7 */
+	{"TS0_D4",	"CSI0_D4"},	/* PE8 */
+	{"TS0_D5",	"CSI0_D5"},	/* PE9 */
+	{"TS0_D6",	"CSI0_D6"},	/* PE10 */
+	{"TS0_D7",	"CSI0_D7"},	/* PE11 */
+	{"TS0_CLK",	"CSI0_PCLK"},	/* PE12 */
+	{"TS0_ERR",	"CSI0_MCLK"},	/* PE13 */
+	{"TS0_SYNC",	"CSI0_HSYNC"},	/* PE14 */
+	{"TS0_DVLD",	"CSI0_VSYNC"},	/* PE15 */
+	{"TS0_D0",	"CSI0_D0"},	/* PE16 */
+	{"TS0_D1",	"CSI0_D1"},	/* PE17 */
+	{"TS0_D2",	"CSI0_D2"},	/* PE18 */
+	{"TS0_D3",	"CSI0_D3"},	/* PE19 */
+	{"TS0_D4",	"CSI0_D4"},	/* PE20 */
+	{"TS0_D5",	"CSI0_D5"},	/* PE21 */
+	{"TS0_D6",	"CSI0_D6"},	/* PE22 */
+	{"TS0_D7",	"CSI0_D7"},	/* PE23 */
+	{"TS0_CLK",	"CSI0_PCLK"},	/* PE24 */
+	{"TS0_ERR",	"CSI0_MCLK"},	/* PE25 */
+	{"TS0_SYNC",	"CSI0_HSYNC"},	/* PE26 */
+	{"TS0_DVLD",	"CSI0_VSYNC"},	/* PE27 */
+	{"TS0_D0",	"CSI0_D0"},	/* PE28 */
+	{"TS0_D1",	"CSI0_D1"},	/* PE29 */
+	{"TS0_D2",	"CSI0_D2"},	/* PE30 */
+	{"TS0_D3",	"CSI0_D3"},	/* PE31 */
+};
+
 static struct ports a10_ports[] = {
 	{ARRAY_SIZE(port_a), port_a},
 	{ARRAY_SIZE(port_b), port_b},
 	{ARRAY_SIZE(port_c), port_c},
 	{ARRAY_SIZE(port_d), port_d},
+	{ARRAY_SIZE(port_e), port_e},
 };
 
 void register_a10(void)
