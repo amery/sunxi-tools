@@ -3,7 +3,7 @@ CFLAGS = -g -O0 -Wall -Wextra
 CFLAGS += -std=c99 -D_POSIX_C_SOURCE=200112L
 CFLAGS += -Iinclude/
 
-TOOLS = fexc bin2fex fex2bin bootinfo fel pio
+TOOLS = fexc bin2fex fex2bin bootinfo fel pio pins
 TOOLS += nand-part
 
 MISC_TOOLS = phoenix_info
