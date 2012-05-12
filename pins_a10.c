@@ -158,12 +158,22 @@ static const char *port_e[][6] = {
 	{"TS0_D3",	"CSI0_D3"},	/* PE31 */
 };
 
+static const char *port_f[][6] = {
+	{"SDC0_D1",  NULL, "JTAG_MS1"},	/* PF0 */
+	{"SDC0_D0",  NULL, "JTAG_DI1"},	/* PF1 */
+	{"SDC0_CLK", NULL, "UART0_TX"},	/* PF2 */
+	{"SDC0_CMD", NULL, "JTAG_DO1"},	/* PF3 */
+	{"SDC0_D3",  NULL, "UART0_RX"},	/* PF4 */
+	{"SDC0_D2",  NULL, "JTAG_CK1"},	/* PF5 */
+};
+
 static struct ports a10_ports[] = {
 	{ARRAY_SIZE(port_a), port_a},
 	{ARRAY_SIZE(port_b), port_b},
 	{ARRAY_SIZE(port_c), port_c},
 	{ARRAY_SIZE(port_d), port_d},
 	{ARRAY_SIZE(port_e), port_e},
+	{ARRAY_SIZE(port_f), port_f},
 };
 
 void register_a10(void)
