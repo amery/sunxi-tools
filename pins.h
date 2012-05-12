@@ -26,4 +26,6 @@ struct ports {
 
 void register_pins(const char *soc, struct ports *ports, size_t len);
 
+void register_a10(void);
+
 #endif

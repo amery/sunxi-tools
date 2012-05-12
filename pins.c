@@ -43,5 +43,6 @@ void register_pins(const char *soc, struct ports *ports, size_t len)
 
 int main(int UNUSED(argc), char *UNUSED(argv[]))
 {
+	register_a10();
 	return 0;
 }

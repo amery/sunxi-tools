@@ -37,6 +37,8 @@ LIBUSB_LIBS = `pkg-config --libs $(LIBUSB)`
 fel: fel.c
 	$(CC) $(CFLAGS) $(LIBUSB_CFLAGS) $(LDFLAGS) -o $@ $(filter %.c,$^) $(LIBS) $(LIBUSB_LIBS)
 
+pins: pins_a10.c
+
 %: %.c
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $(filter %.c,$^) $(LIBS)
 
