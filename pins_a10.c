@@ -65,9 +65,37 @@ static const char *port_b[][6] = {
 	{"UART0_RX", "IR1_RX"},			/* PB23 */
 };
 
+static const char *port_c[][6] = {
+	{"NWE#", "SPI0_MOSI"},			/* PC0 */
+	{"NALE", "SPI0_MISO"},			/* PC1 */
+	{"NCLE", "SPI0_CLK"},			/* PC2 */
+	{"NCE1"},				/* PC3 */
+	{"NCE0"},				/* PC4 */
+	{"NRE#"},				/* PC5 */
+	{"NRB0", "SDC2_CMD"},			/* PC6 */
+	{"NRB1", "SDC2_CLK"},			/* PC7 */
+	{"NDQ0", "SDC2_D0"},			/* PC8 */
+	{"NDQ1", "SDC2_D1"},			/* PC9 */
+	{"NDQ2", "SDC2_D2"},			/* PC10 */
+	{"NDQ3", "SDC2_D3"},			/* PC11 */
+	{"NDQ4"},				/* PC12 */
+	{"NDQ5"},				/* PC13 */
+	{"NDQ6"},				/* PC14 */
+	{"NDQ7"},				/* PC15 */
+	{"NWP"},				/* PC16 */
+	{"NCE2"},				/* PC17 */
+	{"NCE3"},				/* PC18 */
+	{"NCE4", "SPI2_CS0"},			/* PC19 */
+	{"NCE5", "SPI2_CLK"},			/* PC20 */
+	{"NCE6", "SPI2_MOSI"},			/* PC21 */
+	{"NCE7", "SPI2_MISO"},			/* PC22 */
+	{"SPI0_CS0"},				/* PC23 */
+};
+
 static struct ports a10_ports[] = {
 	{ARRAY_SIZE(port_a), port_a},
 	{ARRAY_SIZE(port_b), port_b},
+	{ARRAY_SIZE(port_c), port_c},
 };
 
 void register_a10(void)
