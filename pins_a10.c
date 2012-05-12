@@ -38,8 +38,36 @@ static const char *port_a[][6] = {
 	{"ETXERR", "CAN_RX",	"UART1_RING"},	/* PA17 */
 };
 
+static const char *port_b[][6] = {
+	{"TWI0_SCK"},				/* PB0 */
+	{"TWI0_SDA"},				/* PB1 */
+	{"PWM0"},				/* PB2 */
+	{"IR0_TX",     NULL,	 "NC"},		/* PB3 */
+	{"IR0_RX"},				/* PB4 */
+	{"I2S_MCLK",  "AC97_MCLK"},		/* PB5 */
+	{"I2S_BCLK",  "AC97_BCLK"},		/* PB6 */
+	{"I2S_LRCK",  "AC97_SYNC"},		/* PB7 */
+	{"I2S_DO0",   "AC97_DO"},		/* PB8 */
+	{"I2S_DO1"},				/* PB9 */
+	{"I2S_DO2"},				/* PB10 */
+	{"I2S_DO3"},				/* PB11 */
+	{"I2S_DI",    "AC97_DI", "NC"},		/* PB12 */
+	{"SPI2_CS1",   NULL,	 "NC"},		/* PB13 */
+	{"SPI2_CS0",  "JTAG_MS0"},		/* PB14 */
+	{"SPI2_CLK",  "JTAG_CK0"},		/* PB15 */
+	{"SPI2_MOSI", "JTAG_DO0"},		/* PB16 */
+	{"SPI2_MISO", "JTAG_DI0"},		/* PB17 */
+	{"TWI1_SCK"},				/* PB18 */
+	{"TWI1_SDA"},				/* PB19 */
+	{"TWI2_SCK"},				/* PB20 */
+	{"TWI2_SDA"},				/* PB21 */
+	{"UART0_TX", "IR1_TX"},			/* PB22 */
+	{"UART0_RX", "IR1_RX"},			/* PB23 */
+};
+
 static struct ports a10_ports[] = {
 	{ARRAY_SIZE(port_a), port_a},
+	{ARRAY_SIZE(port_b), port_b},
 };
 
 void register_a10(void)
