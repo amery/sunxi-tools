@@ -92,10 +92,42 @@ static const char *port_c[][6] = {
 	{"SPI0_CS0"},				/* PC23 */
 };
 
+static const char *port_d[][6] = {
+	{"LCD0_D0",  "LVDS0_VP0"},		/* PD0 */
+	{"LCD0_D1",  "LVDS0_VN0"},		/* PD1 */
+	{"LCD0_D2",  "LVDS0_VP1"},		/* PD2 */
+	{"LCD0_D3",  "LVDS0_VN1"},		/* PD3 */
+	{"LCD0_D4",  "LVDS0_VP2"},		/* PD4 */
+	{"LCD0_D5",  "LVDS0_VN2"},		/* PD5 */
+	{"LCD0_D6",  "LVDS0_VPC"},		/* PD6 */
+	{"LCD0_D7",  "LVDS0_VNC"},		/* PD7 */
+	{"LCD0_D8",  "LVDS0_VP3"},		/* PD8 */
+	{"LCD0_D9",  "LVDS0_VN3"},		/* PD9 */
+	{"LCD0_D10", "LVDS1_VP0"},		/* PD10 */
+	{"LCD0_D11", "LVDS1_VN0"},		/* PD11 */
+	{"LCD0_D12", "LVDS1_VP1"},		/* PD12 */
+	{"LCD0_D13", "LVDS1_VN1"},		/* PD13 */
+	{"LCD0_D14", "LVDS1_VP2"},		/* PD14 */
+	{"LCD0_D15", "LVDS1_VN2"},		/* PD15 */
+	{"LCD0_D16", "LVDS1_VPC"},		/* PD16 */
+	{"LCD0_D17", "LVDS1_VNC"},		/* PD17 */
+	{"LCD0_D18", "LVDS1_VP3"},		/* PD18 */
+	{"LCD0_D19", "LVDS1_VN3"},		/* PD19 */
+	{"LCD0_D20", "CSI1_MCLK"},		/* PD20 */
+	{"LCD0_D21", "SMC_VPPEN"},		/* PD21 */
+	{"LCD0_D22", "SMC_VPPPP"},		/* PD22 */
+	{"LCD0_D23", "SMC_DET"},		/* PD23 */
+	{"LCD0_CLK", "SMC_VCCEN"},		/* PD24 */
+	{"LCD0_DE",  "SMC_RST"},		/* PD25 */
+	{"LCD0_HSYNC", "SMC_SLK"},		/* PD26 */
+	{"LCD0_VSYNC", "SMC_SDA"},		/* PD27 */
+};
+
 static struct ports a10_ports[] = {
 	{ARRAY_SIZE(port_a), port_a},
 	{ARRAY_SIZE(port_b), port_b},
 	{ARRAY_SIZE(port_c), port_c},
+	{ARRAY_SIZE(port_d), port_d},
 };
 
 void register_a10(void)
